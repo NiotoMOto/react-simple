@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Card from '../../components/card/Card.jsx'
-import Layout from '../../components/Layout/Layout.jsx';
+import Layout from '../../components/layout/Layout.jsx';
 import styles from './home.less';
 import skills from '../../data/skills.js';
 
