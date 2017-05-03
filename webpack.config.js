@@ -42,7 +42,7 @@ module.exports = {
       template: 'app/index.html',
       inject: 'body',
     }),
-    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ]
