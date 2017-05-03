@@ -10,7 +10,6 @@ export default class Home extends React.Component {
 
   constructor(props) {
     super(props);
-    this.initAngle = -(skills.length * 6);
   }
 
   handleHover() {
@@ -25,13 +24,6 @@ export default class Home extends React.Component {
             {skills.map(((skill, k) => (
               <Card
                 index={k}
-                style={
-                  {
-                    transform: `translate(-1.3em, .6em) rotate(${this.initAngle + (k*12)}deg)`,
-                    marginLeft: `${k*40}px`,
-                  }
-                }
-                hover={this.handleHover}
                 value={skill.value}
                 type={skill.type}
                 title={skill.title}

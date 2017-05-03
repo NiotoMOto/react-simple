@@ -12,7 +12,6 @@ export default class Card extends React.Component {
     title: PropTypes.string,
     text: PropTypes.string,
     value: PropTypes.number,
-    hover: PropTypes.hover,
   };
 
   constructor(props) {
@@ -35,11 +34,7 @@ export default class Card extends React.Component {
   render() {
     const otherProps = _.omit(this.props, ['type', 'title', 'text', 'value']);
     return (
-      <div className={`card ${this.state.hover ? 'hover' : ''}`}
-           onMouseEnter={this.handleMouseEnter.bind(this)}
-           onMouseLeave={this.handleMouseLeave.bind(this)}
-           {...otherProps}
-      >
+      <div className="card">
         <div className="inner">
           <div className="header">
             <div className="value hexagon">{this.props.value}</div>
