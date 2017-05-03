@@ -30,6 +30,7 @@
     "html-webpack-plugin": "^2.24.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
+    "webpack": "^2.4.1",
     "webpack-dashboard": "^0.2.0",
     "webpack-dev-middleware": "^1.8.4",
     "webpack-dev-server": "^1.16.2",
